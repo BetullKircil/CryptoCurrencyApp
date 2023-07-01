@@ -1,4 +1,4 @@
-package com.betulkircil.crypto_app_clean_arthitecture
+package com.betulkircil.crypto_app_clean_arthitecture.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.betulkircil.crypto_app_clean_arthitecture.ui.theme.Crypto_App_Clean_ArthitectureTheme
+import com.betulkircil.crypto_app_clean_arthitecture.presentation.ui.theme.Crypto_App_Clean_ArthitectureTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

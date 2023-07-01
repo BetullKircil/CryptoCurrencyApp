@@ -1,4 +1,4 @@
-package com.betulkircil.crypto_app_clean_arthitecture.ui.theme
+package com.betulkircil.crypto_app_clean_arthitecture.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

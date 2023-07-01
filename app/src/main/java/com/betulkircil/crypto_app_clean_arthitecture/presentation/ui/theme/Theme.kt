@@ -1,4 +1,4 @@
-package com.betulkircil.crypto_app_clean_arthitecture.ui.theme
+package com.betulkircil.crypto_app_clean_arthitecture.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
