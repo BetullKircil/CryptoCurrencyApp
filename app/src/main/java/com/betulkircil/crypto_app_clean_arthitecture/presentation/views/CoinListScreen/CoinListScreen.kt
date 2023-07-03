@@ -1,7 +1,6 @@
 package com.betulkircil.crypto_app_clean_arthitecture.presentation.views.CoinListScreen
 
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.BoxScopeInstance.align
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -39,7 +38,7 @@ fun CoinListScreen(
 
         if(state.error.isNotEmpty()){
             Text(text = state.error,
-            color = MaterialTheme.colorScheme.,
+            color = MaterialTheme.colorScheme.error,
             textAlign = TextAlign.Center, modifier = Modifier
                     .padding(20.dp)
                     .align(Alignment.Center))
