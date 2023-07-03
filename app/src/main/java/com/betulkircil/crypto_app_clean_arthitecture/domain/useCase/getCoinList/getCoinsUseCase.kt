@@ -18,7 +18,7 @@ class getCoinsUseCase @Inject constructor(
             val coins = repository.getCoins().map {
                 it.toCoin()
             }
-            emit(Resource.Success(coins))
+            //emit(Resource.Success(coins))
         }
         catch (e : Exception){
             emit(Resource.Error(e.localizedMessage?: "Unexpected error"))

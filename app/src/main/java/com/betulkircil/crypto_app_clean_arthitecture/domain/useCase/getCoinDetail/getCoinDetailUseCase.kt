@@ -12,11 +12,11 @@ import javax.inject.Inject
 class getCoinDetailUseCase @Inject constructor(
     private val repository: CoinRepository
 ) {
-    operator fun invoke(coinId : String) : Flow<Resource<List<CoinDetail>>> = flow{
+    operator fun invoke(coinId : String) : Flow<Resource<CoinDetail>> = flow{
         try {
             emit(Resource.Loading())
             val coin = repository.getCoinById(coinId).toCoinDetail()
-            emit(Resource.Success(coin))
+            emit(Resource.Success<CoinDetail>(coin))
         }
         catch (e : Exception){
             emit(Resource.Error(e.localizedMessage?: "Unexpected error"))
